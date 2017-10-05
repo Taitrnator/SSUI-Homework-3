@@ -1,10 +1,3 @@
-
-body{
-  text-align: center;
-  width: 40%;
-  margin: auto;
-}
-
 h1 {
   font-family: 'Bad Script', cursive;
   color: orangered;
@@ -15,6 +8,15 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
-.starterImage{
-  width: 16em;
+.mp-menu {
+  display: flex;
+}
+.mp-menu ul {
+  list-style-type: none;
+}
+
+.mp-sidebar {
+  float: left;
+  width: 300px;
+  list-style-type: none;
 }
