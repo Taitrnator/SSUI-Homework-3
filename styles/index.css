@@ -1,3 +1,6 @@
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
 h1 {
   font-family: 'Bad Script', cursive;
   color: orangered;
@@ -7,16 +10,39 @@ p {
   text-align: left;
   font-family: 'Lato', sans-serif;
 }
-
 .mp-menu {
   display: flex;
 }
 .mp-menu ul {
   list-style-type: none;
 }
+.mp-article-img {
+  margin-left: auto;
+  float: right;
+}
 
 .mp-sidebar {
-  float: left;
+  margin-top: 0;
+  left: 0;
   width: 300px;
   list-style-type: none;
+  position: absolute;
+  background-color: #fff;
+}
+.mp-sidebar li {
+  margin: 3rem auto;
+}
+.mp-featured {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.mp-shopping-cart {
+  right: 0;
+  width: 300px;
+  position: absolute;
+  margin-top: 0;
+  background-color: #fff;
 }
