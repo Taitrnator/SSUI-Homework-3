@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Awesome Store</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="scripts/app.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="mp-promobanner"><p>20% off your entire order. Use code <strong>Doggo</strong></p></div>
+    <nav class="mp-menu">
+      <ul class="leftnav">
+        <li>
+          <a href="/"><img class="mp-logo" src="/resources/images/muddypaws-logo.png" alt="logo"></a>
+        </li>
+        <li><h4>Adventure gear of the furred kind.</h4></li>
+      </ul>
+      <ul class="rightnav">
+        <li id="cartButton" class="mp-cart"><img src="/resources/images/shoppingcart.png" alt="shoppingcart"></li>
+      </ul>
+    </nav>
+  </header>
+    <ul id="shoppingCart" class="mp-shopping-cart">
+    </ul>
+  <main>
+    <article class="mp-product-row">
+      <section class="mp-thumbnails">
+        <img id="product-thumbnail" class="mp-thumbnail" src="https://www.thecatconnection.com/mm5/graphics/00000001/CC_NewHarness_2.jpg" alt="">
+        <img class="mp-thumbnail" src="https://www.thecatconnection.com/mm5/graphics/00000001/CC_NewHarness_1.jpg" alt="">
+      </section>
+      <section id="mp-focused-img-container">
+        <img id="mp-focused-img" src="https://www.thecatconnection.com/mm5/graphics/00000001/CC_NewHarness_2.jpg" alt="">
+      </section>
+      <section class="mp-focused-item">
+        <h4 id="mp-product-name">Catigory 5 Cat Harness</h4>
+        <a href="#">Write Review</a>
+        <p id="mp-price">$59.99</p>
+        <div class="mp-size-ctrl"></div>
+        <div class="mp-color-ctrl"></div>
+        <button id="addToCart" class="mp-button expand">Add to Cart</button>
+      </section>
+    </article>
+    <h3 class="mp-article-header">Featured Products</h3>
+    <article class="mp-featured">
+      <section><a href="/gpscollar.html"><div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/25502-TopRopeCollar-TwilightGray_1024x1024.jpg?v=1500310812" alt="product1" /></div><h4>Wunderdog GPS Collar</h4><p>$99.99</p></a></section>
+      <section><a href="/catharness.html"><div class="img-container"><img src="https://www.thecatconnection.com/mm5/graphics/00000001/CC_NewHarness_2.jpg" alt="product2" /></div><h4>Catigory 5 Cat Harness</h4><p>$34.99</p></a></section>
+      <section><a href="/dogharness.html"><div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/30301-DoublebackHarness-Right_640x.jpg?v=1495721792" alt="product3" /></div><h4>MuddyPaws Dog Harness</h4><p>$34.99</p></a></section>
+    </article>
+  </main>
+
+  <!-- prevents load blocking when you load content like this at the bottom of the body -->
+  <script src="https://use.typekit.net/rgv4uke.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</body>
+</html>
