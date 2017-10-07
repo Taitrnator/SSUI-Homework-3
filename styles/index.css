@@ -10,6 +10,13 @@ main {
   margin: auto;
 }
 
+a {
+  font-size: 1.8rem;
+  color: #333;
+  font-family: 'futura-pt', 'Helvetica';
+  font-weight: 400;
+}
+
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: 'futura-pt', 'Helvetica';
@@ -56,6 +63,35 @@ p, li {
   font-weight: 300;
   text-align: left;
 }
+
+
+/*buttons*/
+.mp-button {
+  color: #fff;
+  border-radius: 15px;
+  background-color: #2BA388;
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+  webkit-appearance: none;
+  transition: all 0.2s ease-in;
+}
+.mp-button:hover {
+  padding: 1.2rem;
+  background-color: #4bc3a8;
+}
+.mp-button:focus {
+  outline: none;
+}
+
+.mp-removelink {
+  font-size: 1.8rem;
+}
+
+.mp-thumbnail {
+  width: 180px;
+}
+
 
 .mp-promobanner {
   padding: 0.1rem 0.5rem;
@@ -148,13 +184,48 @@ p, li {
   right: 0;
   width: 300px;
   position: absolute;
-  margin-top: 0;
+  top: 0px;
   background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  visibility: hidden;
+  opacity: 0%;
+  transition: all 0.2s ease-in;
 }
 
 
+.mp-product-row
+ {
+   margin: auto;
+   margin-top: 5rem;
+   display: flex;
+   width: 1024px;
+   justify-content: space-between;
+ }
+ .mp-thumbnails {
+   width: 150px;
+ }
+ .mp-thumbnails img {
+   width: 128px;
+ }
+ #mp-focused-img-container {
+   width: 500px;
+ }
+ #mp-focused-img-container img {
+   width: 489px;
+ }
+ .mp-focused-item {
+   width: 270px;
+ }
 /*utility classes*/
 
 .fake-link {
   text-decoration: underline;
+}
+.show {
+  top: 70px;
+  opacity: 100%;
+  visibility: visible;
+}
+.expand {
+  width: 100%;
 }
