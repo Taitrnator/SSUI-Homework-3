@@ -30,6 +30,13 @@
     </nav>
   </header>
     <ul id="shoppingCart" class="mp-shopping-cart">
+      <header><h3>Your Cart</h3></header>
+      <section id="cart-content"></section>
+      <!-- <section class="mp-total">
+        <h4 class="left">Subtotal</h4>
+        <h4 class="right">$0.00</h4>
+      </section> -->
+      <button class="mp-button expand">Checkout</button>
     </ul>
   <main>
     <article class="mp-product-row">
@@ -44,16 +51,40 @@
         <h4 id="mp-product-name">Catigory 5 Cat Harness</h4>
         <a href="#">Write Review</a>
         <p id="mp-price">$59.99</p>
-        <div class="mp-size-ctrl"></div>
-        <div class="mp-color-ctrl"></div>
+        <div class="mp-size-ctrl mp-container">
+          <label class="mp-label" for="size-ctrl">Size: <strong id="active-size">Norml</strong><label>
+          <div class="size-ctrl">
+          <label for="size_xsmall" class="size-option">x-smol<input id="size_xsmall" name="size" type="radio" value="X-smol" checked=""></label>
+          <label for="size_small" class="size-option">smol<input id="size_small" name="size" type="radio" value="Smol" checked=""></label>
+          <label for="size_medium" class="size-option active">norml<input id="size_medium" name="size" type="radio" value="Norml" checked=""></label>
+          <label for="size_large" class="size-option">cheezburgr<input id="size_large" name="size" type="radio" value="Cheezburgr" checked=""></label>
+          </div>
+        </div>
+        <div class="mp-color-ctrl mp-container">
+          <label class="mp-label" for="color-ctrl">Color: <strong id="active-color">Strawberry</strong><label>
+          <div class="color-ctrl">
+            <label class="color-option strawberry active" for="strawberry"><input type="radio" id="strawberry" name="color" value="Strawberry"></label>
+            <label class="color-option blackberry" for="blackberry"><input type="radio" id="blackberry" name="color" value="Blackberry"></label>
+            <label class="color-option crazyberry" for="crazyberry"><input type="radio" id="crazyberry" name="color" value="Crazyberry"></label>
+            <label class="color-option camo" for="camo"><input type="radio" id="camo" name="color" value="Camo"></label>
+            <label class="color-option night_moon" for="night_moon"><input type="radio" id="night_moon" name="color" value="Night Moon"></label>
+            <label class="color-option fire_orange" for="fire_orange"><input type="radio" id="fire_orange" name="color" value="Fire Orange"></label>
+          </div>
+        </div>
         <button id="addToCart" class="mp-button expand">Add to Cart</button>
       </section>
+    </article>
+    <article class="product-feat-description">
+      <section class="product-feat-copy">
+        <p>Let your cat explore the great outdoors in safety and comfort with the lightweight Catigory-5 Cat Harness. Soft, comfortable and safe, the Kitty Holster is made from strong, utra-lightweight material and secured with wide velcro closures. Perfect for exercising the high-energy feline outdoors and for traveling with your cat.</p>
+      </section>
+      <section class="product-feat-img"><img class="feat-img" src="http://www.adventurecats.org/wp-content/uploads/2017/03/resize-2.jpg" alt="adventure-cat"></section>
     </article>
     <h3 class="mp-article-header">Featured Products</h3>
     <article class="mp-featured">
       <section><a href="/gpscollar.html"><div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/25502-TopRopeCollar-TwilightGray_1024x1024.jpg?v=1500310812" alt="product1" /></div><h4>Wunderdog GPS Collar</h4><p>$99.99</p></a></section>
-      <section><a href="/catharness.html"><div class="img-container"><img src="https://www.thecatconnection.com/mm5/graphics/00000001/CC_NewHarness_2.jpg" alt="product2" /></div><h4>Catigory 5 Cat Harness</h4><p>$34.99</p></a></section>
-      <section><a href="/dogharness.html"><div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/30301-DoublebackHarness-Right_640x.jpg?v=1495721792" alt="product3" /></div><h4>MuddyPaws Dog Harness</h4><p>$34.99</p></a></section>
+      <section><a href="/dogbowl.html"><div class="img-container"><img src="//cdn.shopify.com/s/files/1/1577/4333/products/20501-Quencher-PacificBlue_640x.jpg?v=1499699372" alt="product1" /></div><h4>Yosemite Food Bowl</h4><p>$29.99</p></a></section>
+      <section><a href="/dogharness.html"><div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/30301-DoublebackHarness-Right_640x.jpg?v=1495721792" alt="product3" /></div><h4>MuddyPaws Pawesome Harness</h4><p>$34.99</p></a></section>
     </article>
   </main>
 

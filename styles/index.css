@@ -53,20 +53,34 @@ h6 {
   margin: 1rem 0rem;
 }
 p {
-  font-size: 1.6rem;
-  line-height: 0.8;
+  font-family: 'futura-pt', 'Helvetica';
+  font-size: 2rem;
   margin: 1rem 0rem;
 }
 
-p, li {
+li {
   font-family: 'futura-pt', 'Helvetica';
   font-weight: 300;
   text-align: left;
 }
 
+.mp-label {
+  font-size: 1.5rem;
+  font-family: 'futura-pt', 'Helvetica';
+  font-weight: 300;
+  text-align: left;
+}
+.mp-hint-text {
+  font-size: 1.5rem;
+  color: #A2A2A2;
+  margin: 0.1rem 0;
+  line-height: 0.8;
+}
 
 /*buttons*/
 .mp-button {
+  font-family: 'futura-pt', 'Helvetica';
+  font-weight: 600;
   color: #fff;
   border-radius: 15px;
   background-color: #2BA388;
@@ -147,9 +161,115 @@ p, li {
   float: right;
   width: 1024px;
 }
-.mp-cart img {
-  max-width: 35px;
+
+.mp-container {
+  margin: 1rem 0;
 }
+
+.color-ctrl input[type="radio"], .size-ctrl input[type="radio"] {
+  display: none;
+}
+
+.size-ctrl {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #4b4f59;
+  border-radius: 15px;
+}
+.color-ctrl {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.color-ctrl label {
+  width: 32px;
+  height: 32px;
+  box-shadow: inset 0 0 0 1px #d6dadf;
+}
+.color-option.strawberry {
+  background-color: #FF3F3F;
+}
+.color-option.blackberry {
+  background-color: #250A82;
+}
+.color-option.crazyberry {
+  background: linear-gradient(180deg, #F84AFF 0%, #76011A 100%);
+}
+.color-option.camo {
+  background-image: url("/resources/images/camo.png");
+  background-size: cover;
+}
+.color-option.night_moon {
+  background: linear-gradient(180deg, #2C1773 0%, #83B5C3 100%);
+}
+.color-option.fire_orange {
+  background-color: #FF9D63;
+}
+.color-option.active {
+  border: 3px solid #333;
+}
+.size-ctrl label {
+  display: flex;
+  height: 32px;
+  border-right: 1px solid #333;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.size-ctrl label:last-child {
+  border-right: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.size-ctrl label:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.size-ctrl label.active {
+  	background-color: #2BA388;
+    color: #fff;
+}
+
+.product-feat-description {
+  display: flex;
+  justify-content: space-between;
+}
+.product-feat-copy {
+  width: 416px;
+}
+.product-feat-img img {
+  width: 519px;
+}
+
+.mp-cart img {
+  max-width: 33px;
+}
+
+.mp-cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0.5rem;
+  align-items: center;
+}
+
+.mp-cart-item h5 {
+  display: inline-block;
+  width: 150px;
+  margin: 0;
+}
+
+.mp-cart-item a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #2BA388;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.mp-cart-item img {
+  max-width: 75px;
+}
+
 .mp-sidebar {
   left: 0;
   width: 300px;
@@ -159,6 +279,25 @@ p, li {
 }
 .mp-sidebar li {
   margin: 3rem auto;
+}
+.mp-sidebar li.active {
+  width: 400px;
+  background-color: #fff;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.mp-sidebar li.active h4 {
+  font-size: 3rem;
+}
+
+.mp-sidebar h4:hover {
+  transition: all 0.2s ease-in;
+  font-size: 2.4rem;
+}
+.mp-sidebar a {
+  text-decoration: none;
 }
 .mp-featured {
   display: flex;
@@ -180,6 +319,20 @@ p, li {
   max-width: 100%;
 }
 
+
+.mp-product-list section {
+  max-width: 1040px;
+  display: flex;
+  align-items: center;
+}
+.mp-product-list section .description-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.mp-product-list section .product-price {
+  margin-left: auto;
+}
+
 .mp-shopping-cart {
   right: 0;
   width: 300px;
@@ -190,8 +343,28 @@ p, li {
   visibility: hidden;
   opacity: 0%;
   transition: all 0.2s ease-in;
+  padding-left: 0;
+}
+.mp-shopping-cart header {
+  text-align:center;
+  color: #fff;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #2BA388;
+}
+.mp-shopping-cart .mp-button {
+  margin: 0.5rem;
+  background-color: #CF9100;
+}
+.mp-shopping-cart .mp-button:hover {
+  background-color: #eFb120;
 }
 
+.mp-total {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
 
 .mp-product-row
  {

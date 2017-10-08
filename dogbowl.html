@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Awesome Store</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="scripts/app.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="mp-promobanner"><p>20% off your entire order. Use code <strong>Doggo</strong></p></div>
+    <nav class="mp-menu">
+      <ul class="leftnav">
+        <li>
+          <a href="/"><img class="mp-logo" src="/resources/images/muddypaws-logo.png" alt="logo"></a>
+        </li>
+        <li><h4>Adventure gear of the furred kind.</h4></li>
+      </ul>
+      <ul class="rightnav">
+        <li id="cartButton" class="mp-cart"><img src="/resources/images/shoppingcart.png" alt="shoppingcart"></li>
+      </ul>
+    </nav>
+  </header>
+    <ul id="shoppingCart" class="mp-shopping-cart">
+      <header><h3>Your Cart</h3></header>
+      <section id="cart-content"></section>
+      <!-- <section class="mp-total">
+        <h4 class="left">Subtotal</h4>
+        <h4 class="right">$0.00</h4>
+      </section> -->
+      <button class="mp-button expand">Checkout</button>
+    </ul>
+  <main>
+    <article class="mp-product-row">
+      <section class="mp-thumbnails">
+        <img id="product-thumbnail" class="mp-thumbnail" src="//cdn.shopify.com/s/files/1/1577/4333/products/20501-Quencher-PacificBlue-Water_1024x1024.jpg?v=1499699372" alt="">
+        <img class="mp-thumbnail" src="//cdn.shopify.com/s/files/1/1577/4333/products/20501-Quencher-PacificBlue-AllSizes_1024x1024.jpg?v=1499699372" alt="">
+      </section>
+      <section id="mp-focused-img-container">
+        <img id="mp-focused-img" src="//cdn.shopify.com/s/files/1/1577/4333/products/20501-Quencher-PacificBlue-Water_1024x1024.jpg?v=1499699372" alt="">
+      </section>
+      <section class="mp-focused-item">
+        <h4 id="mp-product-name">Yosemite Food Bowl</h4>
+        <a href="#">Write Review</a>
+        <p id="mp-price">$29.99</p>
+        <div class="mp-size-ctrl mp-container">
+          <label class="mp-label" for="size-ctrl">Size: <strong id="active-size">Doggo</strong><label>
+          <div class="size-ctrl">
+          <label for="size_xsmall" class="size-option">Pupperino<input id="size_xsmall" name="size" type="radio" value="Pupperino" checked=""></label>
+          <label for="size_small" class="size-option">Smol<input id="size_small" name="size" type="radio" value="Smol" checked=""></label>
+          <label for="size_medium" class="size-option active">Doggo<input id="size_medium" name="size" type="radio" value="Doggo" checked=""></label>
+          <label for="size_large" class="size-option">Woofer<input id="size_large" name="size" type="radio" value="Woofer" checked=""></label>
+          </div>
+        </div>
+        <div class="mp-color-ctrl mp-container">
+          <label class="mp-label" for="color-ctrl">Color: <strong id="active-color">Strawberry</strong><label>
+          <div class="color-ctrl">
+            <label class="color-option strawberry active" for="strawberry"><input type="radio" id="strawberry" name="color" value="Strawberry"></label>
+            <label class="color-option blackberry" for="blackberry"><input type="radio" id="blackberry" name="color" value="Blackberry"></label>
+            <label class="color-option crazyberry" for="crazyberry"><input type="radio" id="crazyberry" name="color" value="Crazyberry"></label>
+            <label class="color-option camo" for="camo"><input type="radio" id="camo" name="color" value="Camo"></label>
+            <label class="color-option night_moon" for="night_moon"><input type="radio" id="night_moon" name="color" value="Night Moon"></label>
+            <label class="color-option fire_orange" for="fire_orange"><input type="radio" id="fire_orange" name="color" value="Fire Orange"></label>
+          </div>
+        </div>
+        <button id="addToCart" class="mp-button expand">Add to Cart</button>
+      </section>
+    </article>
+    <article class="product-feat-description">
+      <section class="product-feat-copy">
+        <p>The Yosemite Food Bowl is a twist on our original packable dog bowl. Minimize and simplify by storing and feeding from this multi-use fabric bowl. The integrated drawstring closure keeps kibble contained en route and accessible at mealtime. Great for hungry dogs on the trail, at base camp, or on the go. Available in two sizes to match your adventure.</p>
+      </section>
+      <section class="product-feat-img"><img class="feat-img" src="//cdn.shopify.com/s/files/1/1577/4333/files/Product-Page-Header-Quencher_882x589.jpg?11031042928683062672" alt="adventure-dog"></section>
+    </article>
+    <h3 class="mp-article-header">Featured Products</h3>
+    <article class="mp-featured">
+      <section><a href="/gpscollar.html"><div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/25502-TopRopeCollar-TwilightGray_1024x1024.jpg?v=1500310812" alt="product1" /></div><h4>Wunderdog GPS Collar</h4><p>$99.99</p></a></section>
+      <section><a href="/catharness.html"><div class="img-container"><img src="https://www.thecatconnection.com/mm5/graphics/00000001/CC_NewHarness_2.jpg" alt="product2" /></div><h4>Catigory 5 Cat Harness</h4><p>$34.99</p></a></section>
+      <section><a href="/dogharness.html"><div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/30301-DoublebackHarness-Right_640x.jpg?v=1495721792" alt="product3" /></div><h4>MuddyPaws Pawesome Harness</h4><p>$34.99</p></a></section>
+    </article>
+  </main>
+
+  <!-- prevents load blocking when you load content like this at the bottom of the body -->
+  <script src="https://use.typekit.net/rgv4uke.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</body>
+</html>

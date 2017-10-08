@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Awesome Store</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="scripts/app.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="mp-promobanner"><p>20% off your entire order. Use code <strong>Doggo</strong></p></div>
+    <nav class="mp-menu">
+      <ul class="leftnav">
+        <li>
+          <a href="/"><img class="mp-logo" src="/resources/images/muddypaws-logo.png" alt="logo"></a>
+        </li>
+        <li><h4>Adventure gear of the furred kind.</h4></li>
+      </ul>
+      <ul class="rightnav">
+        <li id="cartButton" class="mp-cart"><img src="/resources/images/shoppingcart.png" alt="shoppingcart"></li>
+      </ul>
+    </nav>
+  </header>
+    <ul id="shoppingCart" class="mp-shopping-cart">
+      <header><h3>Your Cart</h3></header>
+      <section class="mp-total">
+        <h4 class="left">Subtotal</h4>
+        <h4 class="right">$0.00</h4>
+      </section>
+      <button class="mp-button expand">Checkout</button>
+    </ul>
+    <ul class="mp-sidebar">
+      <li><h4>Cat Harnesses</h4></li>
+      <li><a href="/dogharnesses.html"><h4>Dog Harnesses</h4></a></li>
+      <li class="active"><a href="/travelgear.html"><h4>Travel Gear</h4></a></li>
+      <li><h4>GPS Collars</h4></li>
+    </ul>
+  <article class="mp-hero">
+    <img class="mp-article-img" src="//cdn.shopify.com/s/files/1/1577/4333/collections/Product-Category-Header-Image-Bowls_882x589.jpg?v=1504634624" alt="shoptravelgear">
+  </article>
+  <main>
+    <article class="mp-product-list">
+      <section>
+        <div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/25502-TopRopeCollar-TwilightGray_1024x1024.jpg?v=1500310812" alt="product1" /></div>
+        <div class="description-container"><h4>Wunderdog GPS Collar</h4></div>
+        <div class="product-price"><p>$99.99</p></div>
+      </section>
+      <section>
+        <div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/25502-TopRopeCollar-TwilightGray_1024x1024.jpg?v=1500310812" alt="product1" /></div>
+        <div class="description-container"><h4>Wunderdog GPS Collar</h4></div>
+        <div class="product-price"><p>$99.99</p></div>
+      </section>
+      <section>
+        <div class="img-container"><img src="https://cdn.shopify.com/s/files/1/1577/4333/products/25502-TopRopeCollar-TwilightGray_1024x1024.jpg?v=1500310812" alt="product1" /></div>
+        <div class="description-container"><h4>Wunderdog GPS Collar</h4></div>
+        <div class="product-price"><p>$99.99</p></div>
+      </section>
+    </article>
+  </main>
+
+  <!-- prevents load blocking when you load content like this at the bottom of the body -->
+  <script src="https://use.typekit.net/rgv4uke.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</body>
+</html>
