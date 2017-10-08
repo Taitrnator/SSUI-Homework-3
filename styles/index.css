@@ -197,7 +197,7 @@ li {
   background: linear-gradient(180deg, #F84AFF 0%, #76011A 100%);
 }
 .color-option.camo {
-  background-image: url("./resources/images/camo.png");
+  background-image: url("/resources/images/camo.png");
   background-size: cover;
 }
 .color-option.night_moon {
