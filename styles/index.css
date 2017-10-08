@@ -168,6 +168,9 @@ a.mp-button {
 .mp-container {
   margin: 1rem 0;
 }
+.description-container {
+  max-width: 500px;
+}
 
 .color-ctrl input[type="radio"], .size-ctrl input[type="radio"] {
   display: none;
