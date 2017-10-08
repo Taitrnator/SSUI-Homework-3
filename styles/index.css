@@ -97,6 +97,9 @@ li {
 .mp-button:focus {
   outline: none;
 }
+a.mp-button {
+  text-decoration: none;
+}
 
 .mp-removelink {
   font-size: 1.8rem;
@@ -265,6 +268,7 @@ li {
   color: #2BA388;
   text-transform: uppercase;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 .mp-cart-item img {
   max-width: 75px;
@@ -326,11 +330,13 @@ li {
   align-items: center;
 }
 .mp-product-list section .description-container {
-  display: flex;
-  justify-content: flex-start;
+  padding-left: 2rem;
 }
 .mp-product-list section .product-price {
   margin-left: auto;
+}
+.product-price p {
+  text-align: right;
 }
 
 .mp-shopping-cart {
